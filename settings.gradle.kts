@@ -22,4 +22,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "ConventionPlugin"
 include(":app")
-include(":build-logic:convention")
