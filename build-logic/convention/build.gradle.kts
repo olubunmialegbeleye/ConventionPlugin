@@ -26,3 +26,12 @@ dependencies {
     compileOnly(libs.android.gradlePlugin)
     compileOnly(libs.android.tools.common)
 }
+
+gradlePlugin {
+    plugins {
+        register("androidApplication") {
+            id = libs.plugins.example.android.application.get().pluginId
+            implementationClass = "AndroidApplicationConventionPlugin"
+        }
+    }
+}
